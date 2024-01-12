@@ -1,0 +1,11 @@
+---
+interface Props {
+	style: string;
+}
+
+const { style } = Astro.props;
+---
+
+<div class={style + " w-max h-max px-2 py-1 border-1 rounded text-sm"}>
+	<slot/>
+</div>
